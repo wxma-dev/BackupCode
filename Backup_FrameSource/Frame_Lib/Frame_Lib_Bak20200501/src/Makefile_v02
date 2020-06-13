@@ -1,0 +1,25 @@
+#当前目录下的*.c文件进行编译，不包括子目录
+
+LIBLIST = ../lib/libPUB.so
+LIBLIST_JT = ../lib/libPUB.a
+SRC = ${wildcard *.c}
+OBJ = ${patsubst %.c, %.o, $(SRC)}
+
+CLEANFILES = ${OBJ} $(LIBLIST) $(LIBLIST_JT)
+
+all:$(OBJ) $(LIBLIST) $(LIBLIST_JT)
+
+$(OBJ): %.o: %.c
+	$(CC) -c -fPIC $^ -o $@
+
+$(LIBLIST):
+	$(CC) -shared -fPIC -o $(LIBLIST) $(OBJ)
+
+$(LIBLIST_JT):
+	ar rcs $(LIBLIST_JT) $(OBJ)
+
+clean:
+	$(RM) $(CLEANFILES) 
+
+.PHONY:all clean
+

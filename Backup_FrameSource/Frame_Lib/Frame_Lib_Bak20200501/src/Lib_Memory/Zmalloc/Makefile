@@ -1,0 +1,36 @@
+
+
+#若需将当前目录下的源文件编程成lib，则如下2行注释去掉
+#LIBNAME:lib的名称
+#LIBDIR:lib存放的目录
+#LIBLIST_SO:（带路径的）动态库列表
+#LIBLIST_A:（带路径的）静态库列表
+LIBNAME = Zmalloc
+LIBDIR  = ./
+LIBLIST_SO = $(LIBDIR)lib$(LIBNAME).so
+LIBLIST_A = $(LIBDIR)lib$(LIBNAME).a
+
+
+#当前目录的*.c换成*.o（不包括子目录）
+SRC = ${wildcard *.c}
+OBJ = ${patsubst %.c, %.o, $(SRC)}
+
+
+CLEANFILES = ${OBJ} $(LIBLIST_SO) $(LIBLIST_A)
+
+all:$(OBJ) $(LIBLIST_SO) $(LIBLIST_A)
+
+$(OBJ): %.o: %.c
+	$(CC) -c -fPIC $^ -o $@
+
+$(LIBLIST_SO):
+	$(CC) -shared -fPIC -o $(LIBLIST_SO) $(OBJ)
+
+$(LIBLIST_A):
+	ar rcs $(LIBLIST_A) $(OBJ)
+
+clean:
+	$(RM) $(CLEANFILES) 
+
+.PHONY:all clean
+

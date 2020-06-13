@@ -1,0 +1,7 @@
+[DEBUG][../Main_Thread_Pool.c:272][main]    获取日志的文件名、打开日志文件=[../../log/frame_log.201951520195151557949135].
+[DEBUG][../Main_Thread_Pool.c:288][main]    从配置文件中，获取添加任务的线程数目sThreadNum_Init_Add_Work			=[0],iThreadNum_Init_Add_Work=[0].
+[DEBUG][../Main_Thread_Pool.c:299][main]    从配置文件中，获取执行任务的线程数目sThreadNum_Init_Do_Add_Work			=[20],iThreadNum_Init_Do_Add_Work=[20].
+[DEBUG][../Main_Thread_Pool.c:301][main]    准备开始除初始化线程池，调用函数pool_init.
+[DEBUG][../Main_Thread_Pool.c:40][ThreadPool_Init]    ThreadPool_Init开始.
+[ERROR][../Main_Thread_Pool.c:55][ThreadPool_Init]    添加任务线程的数目不能为0!
+[DEBUG][../Main_Thread_Pool.c:304][main]    调用函数pool_init结束.

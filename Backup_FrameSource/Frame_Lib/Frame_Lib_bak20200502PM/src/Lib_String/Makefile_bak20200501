@@ -1,0 +1,55 @@
+
+PATH_MAKEALLCHILDDIR = ../../../Frame_Makefile
+include $(PATH_MAKEALLCHILDDIR)/MakeAllChildDir.mk
+
+#本工程需要的所有对象文件
+SRC = ${wildcard *.c}
+OBJ = ${patsubst %.c, %.o, $(SRC)}
+
+#编译子目录
+define make_subdir
+ @for subdir in $(SUBDIRS) ; do \
+ ( cd $$subdir && make $1) \
+ done;
+ make $(join project_ , $1 )
+endef
+
+all:
+	$(call make_subdir , all)
+
+project_all:${TARGET}
+
+debug:
+	$(call make_subdir , debug)
+
+clean:
+	$(call make_subdir , clean)
+
+project_clean:
+	rm -rf ${OBJLIST}
+
+
+
+LIBLIST = ../lib/libPUB.so
+LIBLIST_JT = ../lib/libPUB.a
+SRC = ${wildcard *.c}
+OBJ = ${patsubst %.c, %.o, $(SRC)}
+
+CLEANFILES = ${OBJ} $(LIBLIST) $(LIBLIST_JT)
+
+all:$(OBJ) $(LIBLIST) $(LIBLIST_JT)
+
+$(OBJ): %.o: %.c
+	$(CC) -c -fPIC $^ -o $@
+
+$(LIBLIST):
+	$(CC) -shared -fPIC -o $(LIBLIST) $(OBJ)
+
+$(LIBLIST_JT):
+	ar rcs $(LIBLIST_JT) $(OBJ)
+
+clean:
+	$(RM) $(CLEANFILES) 
+
+.PHONY:all clean
+

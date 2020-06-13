@@ -1,0 +1,119 @@
+[DEBUG][../Main_Thread_Pool.c:272][main]    获取日志的文件名、打开日志文件=[../../log/frame_log.201951520195151557948866].
+[DEBUG][../Main_Thread_Pool.c:288][main]    从配置文件中，获取添加任务的线程数目sThreadNum_Init_Add_Work			=[1],iThreadNum_Init_Add_Work=[1].
+[DEBUG][../Main_Thread_Pool.c:299][main]    从配置文件中，获取执行任务的线程数目sThreadNum_Init_Do_Add_Work			=[20],iThreadNum_Init_Do_Add_Work=[20].
+[DEBUG][../Main_Thread_Pool.c:301][main]    准备开始除初始化线程池，调用函数pool_init.
+[DEBUG][../Main_Thread_Pool.c:40][ThreadPool_Init]    ThreadPool_Init开始.
+[DEBUG][../Main_Thread_Pool.c:64][ThreadPool_Init]    分配CThread_pool的空间
+[DEBUG][../Main_Thread_Pool.c:71][ThreadPool_Init]    初始化互斥锁CThread_pool->queue_lock_F
+[DEBUG][../Main_Thread_Pool.c:80][ThreadPool_Init]    初始化条件变量CThread_pool->queue_ready_F
+[DEBUG][../Main_Thread_Pool.c:95][ThreadPool_Init]    启动-添加任务线程，有线程数目=[1].
+[DEBUG][../Main_Thread_Pool.c:100][ThreadPool_Init]    启动-添加任务线程,序号[0]。
+[DEBUG][../Main_Thread_Pool.c:102][ThreadPool_Init]    启动-添加任务线程完成.
+[DEBUG][../Main_Thread_Pool.c:104][ThreadPool_Init]    启动-执行工作线程，有线程数目=[20].
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[0]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    [DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[1]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x297d1700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x297d1700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[2]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x28fd0700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x28fd0700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[3]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x29fd2700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x29fd2700 is waiting
+
+starting thread 0x23fff700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x23fff700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[4]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x237fe700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x237fe700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[5]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x22ffd700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x22ffd700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[6]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x227fc700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x227fc700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[7]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x21ffb700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x21ffb700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[8]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x217fa700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x217fa700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[9]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x20ff9700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x20ff9700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[10]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x207f8700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x207f8700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[11]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1fff7700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1fff7700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[12]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1f7f6700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1f7f6700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[13]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1eff5700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1eff5700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[14]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1e7f4700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1e7f4700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[15]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1dff3700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1dff3700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[16]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1d7f2700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1d7f2700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[17]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1cff1700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1cff1700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[18]。
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1c7f0700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1c7f0700 is waiting
+
+[DEBUG][../Main_Thread_Pool.c:109][ThreadPool_Init]    启动-执行工作线程,序号[19]。
+[DEBUG][../Main_Thread_Pool.c:111][ThreadPool_Init]    启动-执行任务线程完成.
+[DEBUG][../Main_Thread_Pool.c:113][ThreadPool_Init]    ThreadPool_Init结束.
+[DEBUG][../Main_Thread_Pool.c:304][main]    调用函数pool_init结束.
+[INFO][../DoWork_Frame.c:55][Call_Dowork_Thread]    starting thread 0x1bfef700
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x1bfef700 is waiting
+
+[DEBUG][../DoWork_Frame.c:78][Call_Dowork_Thread]    thread 0x297d1700 is starting to work
+
+[DEBUG][../DoWork_Frame.c:64][Call_Dowork_Thread]    thread 0x297d1700 is waiting
+
